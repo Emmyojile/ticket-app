@@ -1,12 +1,14 @@
-import { faHome, faTicket } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
-import React from 'react'
+"use client"
+import { AiOutlineHome,   } from 'react-icons/ai'
+import {  FaTicketAlt,  } from 'react-icons'
+import { faHome, faTicket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav>
-        <div>
+    <nav className='flex justify-between bg-nav p-4'>
+        <div className='flex items-center space-x-4'>
             <Link href="/">
                 <FontAwesomeIcon icon={faHome} className='icon'/>
             </Link>
@@ -15,7 +17,7 @@ const Nav = () => {
             </Link>
         </div>
         <div>
-            <p>
+            <p className='text-default-text'>
                 emmyojile99@gmail.com
             </p>
         </div>
