@@ -17,6 +17,8 @@ export async function POST(req) {
     );
   }
 }
+
+
 export async function GET(req) {
   console.log("All Tickets route!!");
   try {
