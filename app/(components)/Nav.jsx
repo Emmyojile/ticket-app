@@ -16,8 +16,15 @@ const Nav = () => {
           <FontAwesomeIcon icon={faTicket} className="icon" />
         </Link>
       </div>
-      <div>
+      <div className="flex gap-4 items-center pr-8">
         <p className="text-default-text">emmyojile99@gmail.com</p>
+        <Link className="text-default-text" href="/">
+          Login
+        </Link>
+        <Link className="text-default-text" href="/">
+          Logout
+        </Link>
+
       </div>
     </nav>
   );
